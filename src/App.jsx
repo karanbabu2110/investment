@@ -17,7 +17,7 @@ function App() {
     setUserInput((prevUserInput) => {
       return {
         ...prevUserInput, //To have old data which is not changed
-        [inputIdentifier]: newValue,
+        [inputIdentifier]: +newValue, //The + sign will change the value as an integer
       };
     });
   }
